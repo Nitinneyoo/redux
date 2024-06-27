@@ -30,6 +30,16 @@
     font-weight: 400;
 }
 
+.form select {
+    border: none;
+    width: 600px;
+    height: 70px;
+    padding-left: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 2px solid;
+}
+
 .input {
     border: none;
     width: 600px;

@@ -12,3 +12,8 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+
+.postCredit {
+  font-size: 1rem;
+}
