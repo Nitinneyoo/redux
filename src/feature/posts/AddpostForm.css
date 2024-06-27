@@ -20,6 +20,7 @@
 .form {
     display: flex;
     flex-direction: column;
+    /* flex-grow: ; */
     align-items: start;
     gap: 30px;
 
@@ -31,13 +32,16 @@
 }
 
 .form select {
-    border: none;
+    /* border: none; */
     width: 600px;
     height: 70px;
-    padding-left: 20px;
+    /* padding-left: 20px; */
     border-radius: 10px;
     font-size: 18px;
     border: 2px solid;
+    margin-bottom: 1em;
+    display: inline-block;
+    position: relative;
 }
 
 .input {

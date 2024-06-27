@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { postsAdded } from './postsSlice';
-import "./AddpostForm.css";
 import { selectAllUsers } from '../users/usersSlice';
+import "./AddpostForm.css";
 
 const AddpostForm = () => {
     const dispatch = useDispatch();
@@ -33,12 +33,15 @@ const AddpostForm = () => {
             );
             setTitle('');
             setContent('');
+            // setUserId('userId');
         }
     };
     const canSave = Boolean(title) && Boolean(content) && Boolean(userId)
 
     const usersOptions = users.map(user => (
-        <option key={user.id} value={user.id}>
+        <option
+            key={user.id}
+            value={user.id}>
             {user.name}
         </option>
     ))
@@ -59,8 +62,9 @@ const AddpostForm = () => {
                     />
 
                     <label htmlFor='postAuthor'>Author:</label>
-                    <select id='postAuthor' value={userId} onChange={onAuthorChanged}>
+                    <select id='PostAuthor' value={userId} onChange={onAuthorChanged}>
                         <option value=""></option>
+                        {usersOptions}
                     </select>
 
                     <label htmlFor="postContent">Post Content:</label>

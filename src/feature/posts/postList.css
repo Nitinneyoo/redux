@@ -33,3 +33,7 @@ article p {
 .postList-section h2 {
     font-size: 40px;
 }
+
+.postCredit {
+    font-size: 1rem;
+}
