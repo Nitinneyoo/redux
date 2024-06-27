@@ -1,0 +1,53 @@
+.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin: 50px 110px;
+
+}
+
+.post h2 {
+    font-size: 48px;
+}
+
+.form-section {
+    display: flex;
+    gap: 80px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+
+}
+
+.form label {
+    font-size: 38px;
+    font-weight: 400;
+}
+
+.input {
+    border: none;
+    width: 600px;
+    height: 70px;
+    padding-left: 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: 2px solid;
+}
+
+.submit-button {
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    padding: 20px 60px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+
+
+}
