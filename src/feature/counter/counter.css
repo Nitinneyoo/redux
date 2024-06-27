@@ -12,7 +12,7 @@ button {
 .counter-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 
@@ -20,18 +20,27 @@ button {
     font-size: 30px;
 }
 
-input {
+.counter-section button {
+    padding: 10px;
+    margin: 0.5em 0 0.5em 0.5em;
+
+
+}
+
+.counter-input {
     text-align: center;
+    /* font: inherit; */
     max-width: 2.5em;
-    font: inherit;
     padding: 0.5em;
 }
 
-button {
+.counter-button {
     font-size: 2rem;
-    margin: 0.5em 0 0.5em 0.5em;
+    margin-bottom: 10px;
+    gap: 10px;
     min-width: 2em;
     cursor: pointer;
+    /* padding: 10px; */
 }
 
 button:first-child {

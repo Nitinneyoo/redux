@@ -57,7 +57,7 @@ const AddpostForm = () => {
                     />
                     <button
                         className='submit-button'
-                        type="submit"
+                        type="button"
                         onClick={onSavePostClicked}>
                         Save Post
                     </button>

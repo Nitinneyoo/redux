@@ -26,14 +26,14 @@ const Counter = () => {
             </div>
 
             <input
-
+                className='counter-input'
                 type='text'
                 value={incrementAmount}
                 onChange={(e) => setIncrementAmount(e.target.value)}
             >
             </input>
 
-            <div>
+            <div className='counter-button'>
                 <button onClick={() => dispatch(incrementByAmount(addvalue))}>AddValue </button>
                 <button onClick={resetAll}>Reset</button>
 
