@@ -33,7 +33,7 @@ const AddpostForm = () => {
             );
             setTitle('');
             setContent('');
-            // setUserId('userId');
+            setUserId('');
         }
     };
     const canSave = Boolean(title) && Boolean(content) && Boolean(userId)
@@ -62,7 +62,9 @@ const AddpostForm = () => {
                     />
 
                     <label htmlFor='postAuthor'>Author:</label>
-                    <select id='PostAuthor' value={userId} onChange={onAuthorChanged}>
+                    <select id='PostAuthor'
+                        value={userId}
+                        onChange={onAuthorChanged}>
                         <option value=""></option>
                         {usersOptions}
                     </select>
